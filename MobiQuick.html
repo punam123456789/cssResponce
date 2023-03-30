@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            /* height: 100%; */
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+
+
+
+        #info {
+            width: 300px;
+            height: 800px;
+            /* border: 1px solid blue; */
+            background-color: rgb(29, 29, 95);
+        }
+        #info>div:nth-child(1)>div>button:hover {
+            cursor: pointer;
+        }
+        #info>div:nth-child(1)>div:nth-child(1)>img{
+            height: 170px;
+            width: 290px;
+        }
+        #info>div:nth-child(1)>div:nth-child(2)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+            /* margin-right: 5px; */
+        }
+        #info>div:nth-child(1)>div:nth-child(2)>button>i{
+            margin-right: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(3)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(3)>button>i{
+            margin-right: 15px;
+        }
+        #info>div:nth-child(1)>div:nth-child(4)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(4)>button>i{
+            margin-right: 15px;
+        }
+        #info>div:nth-child(1)>div:nth-child(5)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(5)>button>i{
+            margin-right: 15px;
+        }
+        #info>div:nth-child(1)>div:nth-child(6)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(6)>button>i{
+            margin-right: 15px;
+        }
+        #info>div:nth-child(1)>div:nth-child(7)>button{
+            width: 250px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: rgb(7, 7, 82);
+            margin-top: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(7)>button>i{
+            margin-right: 10px;
+        }
+        #info>div:nth-child(1)>div:nth-child(8){
+            margin-top: 15px;
+            margin-left: 10px;
+            
+            
+        }
+
+        /* #mobi {
+            width: 200px;
+            height: 500px;
+            border: 1px solid rgb(70, 14, 102);
+            background-color: blueviolet;
+
+        } */
+
+        #test {
+            width: 90%;
+            height: 800px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+        }
+
+        #navbar {
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid green; */
+            display: flex;
+            margin-left: 550px;
+
+
+        }
+
+        #navbar>div {
+            margin-top: 20px;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            /* display: flex; */
+        }
+
+        #navbar>div:nth-child(1) {
+            border-right: 1px solid grey;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(1)>h3 {
+            text-align: center;
+            margin-right: 15px;
+        }
+
+
+
+
+
+        #navbar>div:nth-child(2) {
+            border-right: 1px solid grey;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(2)>h3 {
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        #navbar>div:nth-child(3) {
+            border-right: 1px solid grey;
+
+        }
+
+        #navbar>div:nth-child(3)>h3 {
+            text-align: center;
+            margin-right: 15px;
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border-right: 1px solid grey; */
+        }
+
+        #navbar>div:nth-child(5)>div {
+            height: 60px;
+            width: 60px;
+        }
+
+        #recharge {
+            width: 95%;
+            height: 350px;
+            border: 1px solid rgb(58, 26, 109);
+            background-color: rgb(29, 29, 95);
+
+            /* margin: auto; */
+
+        }
+
+        #recharge:hover {
+            cursor: pointer;
+        }
+
+        #recharge>div:nth-child(1) {
+            display: flex;
+            /* border-right: 1px solid red; */
+            /* background-color: rgba(0, 0, 255, 0.623); */
+
+        }
+
+        #recharge>div:nth-child(1)>div:nth-child(1) {
+            margin-left: 15px;
+            margin-top: 20px;
+            width: 200px;
+            /* border-right: 1px solid red; */
+
+
+
+
+        }
+
+        #recharge>div:nth-child(1)>div:nth-child(1)>p {
+            font-size: larger;
+            font-style: oblique;
+            font-weight: bolder;
+
+        }
+
+        #recharge>div:nth-child(1)>div:nth-child(2) {
+            margin-left: 650px;
+            margin-top: 20px;
+
+        }
+
+        #recharge>div:nth-child(1) {
+            display: flex;
+        }
+
+        #recharge>div:nth-child(2) {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(1) {
+
+            /* border: 5px solid green; */
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(1)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(1)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+
+            /* border: 5px solid red; */
+
+            border-radius: 50%;
+
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(2)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+
+            /* border: 5px solid red; */
+
+            border-radius: 50%;
+
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(2) {
+            margin-top: 30px;
+            margin-left: 25px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(2)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(3) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(3)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(3)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(4) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(4)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(4)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(5) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(5)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(5)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(6) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(6)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(6)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(7) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(7)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(7)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(8) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(8)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(8)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(9) {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(9)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(9)>h4 {
+            margin-top: 10px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(10) {
+            margin-top: 30px;
+            margin-left: 20px;
+            /* margin-right: 10px; */
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(10)>img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #recharge>div:nth-child(2)>div:nth-child(10)>h4 {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        #recharge>div:nth-child(3) {
+            background-color: white;
+            width: 940px;
+            margin-left: 20px;
+            margin-top: 10px;
+            height: 130px;
+            display: flex;
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(1)>select {
+            height: 50px;
+            width: 270px;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+            font-weight: bold;
+
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(1)>p {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(2)>p {
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(2)>input {
+            height: 47px;
+            width: 270px;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(3)>p {
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(3)>input {
+            height: 47px;
+            width: 270px;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+        }
+
+        #recharge>div:nth-child(3)>div:nth-child(4)>button {
+            height: 50px;
+            width: 80px;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+            margin-top: 35px;
+            background-color: gray;
+        }
+
+        /* #recharge>div:nth-child(3)>div:nth-child(4)>p {
+            flex: none;
+        } */
+
+        #information{
+            /* border: 1px solid red; */
+            width: 95%;
+
+
+        }
+        #information>div:nth-child(1){
+            margin-top: 50px;
+            /* border: 1px solid red; */
+            /* width: 95%; */
+            /* height: 350px; */
+            margin-left: 0px;
+
+        }
+        #information>div:nth-child(2)>div:nth-child(1)>img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        #information>div:nth-child(2)>div:nth-child(1)>h4:hover {
+            cursor: pointer;
+        }
+        #information>div:nth-child(2){
+            display: flex;
+        }
+        #information>div:nth-child(2)>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #information>div:nth-child(2)>div:nth-child(2)>img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+            /* background-color: aquamarine; */
+
+        }
+        #information>div:nth-child(2)>div:nth-child(2)>h4:hover{
+            cursor: pointer;
+        }
+        #information>div:nth-child(2)>div:nth-child(3){
+            margin-left: 20px;
+        }
+        #information>div:nth-child(2)>div:nth-child(3)>img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+            /* background-color: aquamarine; */
+
+        }
+        #information>div:nth-child(2)>div:nth-child(3)>h4:hover{
+            cursor: pointer;
+        }
+        #information>div:nth-child(2)>div:nth-child(4){
+            margin-left: 20px;
+        }
+        #information>div:nth-child(2)>div:nth-child(4)>img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+            /* background-color: aquamarine; */
+
+        }
+        #information>div:nth-child(2)>div:nth-child(4)>h4:hover{
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:1080px) {
+
+            #screen>div:nth-child(1)>div:nth-child(1) {
+                display: none;
+            }
+
+            #screen>div:nth-child(1)>div:nth-child(2) {
+                width: 90%;
+                margin: auto;
+                height: 1000px;
+                border: 5px solid green;
+                margin-top: 0;
+            }
+
+            #info {
+                display: none;
+            }
+
+            #test {
+                width: 90%;
+                margin: auto;
+                height: 1000px;
+                border: 5px solid green;
+                margin-top: 0;
+
+            }
+
+            #recharge {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+
+        <div id="info">
+            <div>
+                <div>
+                    <img src="https://promotions.mobikwik.com/inapp/assets/images/interstitial/overlay-header.png" alt="img">
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-solid fa-bolt"></i> Recharge & Bill Pay</button>
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-solid fa-hand-holding-dollar"></i> Transfer to Bank</button>
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-brands fa-docker"></i> Offers and Deals</button>
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-solid fa-magnifying-glass-location"></i>Local Stores</button>
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-solid fa-rectangle-list"></i>Redeem Payback points</button>
+                </div>
+                <div>
+                    
+                    <button style="color:white" type="button"><i class="fa-solid fa-wallet"></i>Wallet Transfer</button>
+                </div>
+
+                <div>
+                    <h5 style="color:white" type="button">Products</h5>
+                </div>
+                
+
+
+            </div>
+
+
+        </div>
+        <div id="test">
+            <div>
+                <div id="navbar">
+                    <div>
+                        <h3 style="color:blue"><small>What we do ?</small></h3>
+
+                    </div>
+                    <div>
+                        <h3 style="color:blue"><small>Help and Support</small></h3>
+                    </div>
+                    <div>
+                        <h3 style="color:blue"><small>Login</small></h3>
+                    </div>
+                    <div>
+                        <h3 style="color:blue"><small>Signup</small></h3>
+
+                    </div>
+                    <div>
+
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div id="recharge">
+                    <div>
+                        <!-- 1 -->
+                        <div>
+                            <!-- 1 -->
+                            <p style="color:white">Online Mobile Recharge</p>
+
+                        </div>
+                        <div>
+                            <p style="color:white">How it works ?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- 2 -->
+                        <div>
+                            <!-- 1 -->
+
+
+                            <img src="m1.jpg" alt="img">
+                            <h4 style="color:white">Mobile</h4>
+
+
+
+                        </div>
+                        <div>
+
+                            <img src="m2.jpg" alt="img">
+                            <h4 style="color:white">DTH</h4>
+
+                        </div>
+                        <div>
+                            <img src="m3.jpg" alt="img">
+                            <h4 style="color:white">Electricity</h4>
+                        </div>
+                        <div>
+                            <img src="m4.jpg" alt="img">
+                            <h4 style="color:white">Credit Card</h4>
+                        </div>
+                        <div>
+                            <img src="m5.jpg" alt="img">
+                            <h4 style="color:white">Datacard</h4>
+                        </div>
+                        <div>
+                            <img src="m6.jpg" alt="img">
+                            <h4 style="color:white">Landline</h4>
+                        </div>
+                        <div>
+                            <img src="m7.jpg" alt="img">
+                            <h4 style="color:white">Broadband</h4>
+                        </div>
+                        <div>
+                            <img src="m8.jpg" alt="img">
+                            <h4 style="color:white">Piped Gas</h4>
+                        </div>
+                        <div>
+                            <img src="m9.jpg" alt="img">
+                            <h4 style="color:white">Insurance</h4>
+                        </div>
+                        <div>1
+                            <img src="m10.jpg" alt="img">
+                            <h4 style="color:white">More</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- 3 -->
+                        <div>
+                            <!-- 1 -->
+                            <p style="color:grey">Oprater</p>
+
+                            <select>
+                                <option value="tv">Dist TV</option>
+                                <option value="tv">Sun Direct TV</option>
+                                <option value="tv">Airtel DTH</option>
+                            </select>
+
+
+                        </div>
+                        <div>
+                            <!-- 2 -->
+                            <p style="color:grey">Registered Mobile Number/Viewing Card Number</p>
+                            <input type="text" placeholder="Registered Mobile Number">
+
+                        </div>
+                        <div>
+                            <!-- 3 -->
+                            <p style="color:grey">Ammount(Minimum Rs100)</p>
+                            <input type="text" placeholder="Ammount(Minimum Rs100)">
+
+                        </div>
+                        <div>
+                            <!-- 4 -->
+                            <button>GO</button>
+                        </div>
+                        <div>
+                            
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div id="information">
+                    <div>
+                        <h3>What We Do</h3>
+                        <p>Simple, fast and Hassle Free payments</p>
+                    </div>
+                    <div>
+                        <!-- 2 -->
+                        <div>
+                            <!-- 1 -->
+                            <img src="m1.jpg" alt="img">
+                            <h4  style="color:rgb(9, 150, 206)">Phone Recharge & DTH</h4>
+                            <p><small>With money loaded in your <br/>With money loaded in your MobiKwik<br/> wallet,it takes seconds to make phone  <br/>and DTHrecharges!</small></p>
+                        </div>
+                        <div>
+                            <!-- 2 -->
+                            <!-- <i class="fa-solid fa-file-invoice"></i> -->
+                            <img src="m11.jpg" alt="img">
+                            <h4  style="color:rgb(9, 150, 206)">Bill Payments</h4>
+                            <p><small>Pay all your bills across categories<br/> via MobiKwik in seconds and avoid <br/> late payment charges.</small></p>
+                        </div>
+                        <div>
+                            <!-- 3 -->
+                            <img src="m12.jpg" alt="img">
+                            <h4  style="color:rgb(9, 150, 206)">Shopping in Local Stores</h4>
+                            <p><small>With MobiKwik on your phone, enjoy<br/> over 2,50,000+ shopping options and<br/> earn big cashbacks and discounts in the process!</small></p>
+
+
+                        </div>
+                        <div>
+                            <!-- 4-->
+                            <img src="m13.jpg" alt="img">
+                            <h4  style="color:rgb(9, 150, 206)">Transfer money to Bank</h4>
+                            <p><small>You can transfer money from Credit <br/>card to any Bank account.</small></p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
