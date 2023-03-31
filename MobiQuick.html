@@ -26,7 +26,7 @@
 
         #info {
             width: 300px;
-            height: 800px;
+            height: 1500px;
             /* border: 1px solid blue; */
             background-color: rgb(29, 29, 95);
         }
@@ -203,10 +203,86 @@
 
         }
 
+        /* #test>:nth-child(1) {
+            position: fixed;
+        } */
+
         #navbar {
+            display: flex;
+            align-items: center;
+            /* padding: 20px; */
+            padding-left: 50px;
+            padding-right: 30px;
+            padding-top: 20px;
+            height: 30px;
+            margin-bottom: 10px;
+            /* position: fixed; */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* position: fixed; */
+        }
+
+        nav ul {
+            display: inline;
+            list-style: none;
+            display: flex;
+            margin-left: 450px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+            /* border-right: 1px solid grey; */
+            /* margin-left: 5px; */
+            
+        }
+
+        nav>ul >div:nth-child(1) li {
+            /* border-right: 1px solid grey; */
+            margin-left: 10px;
+
+
+        }
+        nav>ul >div:nth-child(2) li {
+            /* border-right: 1px solid grey; */
+            /* margin-right: 10px; */
+            
+            
+
+        }
+        nav>ul >div:nth-child(3) li {
+            /* border-right: 1px solid grey; */
+            
+
+        }
+        nav>ul >div:nth-child(4) li {
+            /* border-right: 1px solid grey; */
+            
+
+        }
+        /* nav>div>div>i{
+            padding-top: 10px;
+            border: 1px solid red;
+            margin-bottom: 30px;
+        } */
+
+
+        nav ul li a {
+            font-size: 15px;
+            color: #4545f5;
+            text-decoration: none;
+            font-family: sans-serif;
+
+        }
+
+
+        /* #navbar {
             width: 100%;
             height: 50px;
-            /* border: 1px solid green; */
+            border: 1px solid green;
             display: flex;
             margin-left: 550px;
 
@@ -267,8 +343,8 @@
 
         #navbar>div:nth-child(5)>div {
             height: 60px;
-            width: 60px;
-        }
+            width: 60px; */
+        /* } */
 
         /* nav{
             width: 95%;
@@ -292,6 +368,7 @@
             background-color: rgb(29, 29, 95);
 
             /* margin: auto; */
+            /* position: absolute; */
 
         }
 
@@ -795,8 +872,8 @@
 
         }
 
-       
-       
+
+
 
 
 
@@ -937,7 +1014,7 @@
         <div id="test">
             <div>
                 <div id="navbar">
-                    <div>
+                    <!-- <div>
                         <h3 style="color:blue"><small>What we do ?</small></h3>
 
                     </div>
@@ -954,7 +1031,25 @@
                     <div>
 
                         <i class="fa-solid fa-user-plus"></i>
-                    </div>
+                    </div> -->
+
+                    <nav>
+                        <ul id="menu">
+                            <div>
+                                <li><a href="#">What we do </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#">Help and Support </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#">Login </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#">Signup</a></li>
+                            </div>
+                        </ul>
+                       
+                    </nav>
 
                 </div>
 
@@ -1217,7 +1312,7 @@
                     <p>Grievance Policy</p>
                 </div>
             </div>
-           
+
         </div>
 
 

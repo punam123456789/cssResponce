@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            display: flex;
+            width: 1000px;
+
+        }
+        #content div{
+            flex-basis: 320px;
+            border: 3px solid black;
+        }
+        .box{
+            flex-shrink: 1;
+        }
+        .test1 {
+            flex-shrink: 2;
+        }
+        .test2 {
+            flex-shrink: 3;
+        }
+        .test3 {
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="box" style="background-color: red;">A</div>
+        <div class="box" style="background-color: blue;">B</div>
+        <div class="test1" style="background-color: gold;">C</div>
+        <div class="test2" style="background-color: green;">D</div>
+        <div class="test3" style="background-color: palevioletred;">E</div>
+    </div>
+</body>
+</html>
