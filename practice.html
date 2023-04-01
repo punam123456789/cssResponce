@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        #screen {
+            width: 100%;
+            height: 1500px;
+            display: flex;
+            justify-content: space-around;
+            border: 5px solid blue;
+        }
+        /* #screen>div:nth-child(1) {
+            margin-left: 20%;
+            width: 15px;
+            height: 600px;
+            /* border: 1px solid red; */
+            /* border: 5px solid blue;
+        } 
+             */
+        
+
+        .header {
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav {
+            width: 60%;
+            margin-left: 400px;
+            padding: 0 0;
+            text-align: center;
+
+           
+        }
+
+        nav ul {
+            background-color: #000;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 20px 30px;
+            color: #fff;
+        }
+        .text{
+            padding: 20px 8%;
+        }
+        nav.sticky{
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* padding: 10px 8%;     */
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* transition: padding 0s; */
+        }
+        nav.sticky ul{
+            /* width: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <!-- <div>left</div> -->
+        <div class="header">
+            <nav id="navbar">
+                <ul id="menu">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>HOME</li>
+                    <li>HOME</li>
+                    <li>HOME</li>
+                </ul>
+            </nav>
+
+        </div>
+      
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+        <p class="text">When Google was just a start-up business in Palo Alto, Calif., 
+            it did not have enough money to pay its employees the high wages of today’s Google,
+             so they offered them stock in place of a massive salary. Those original employees, 
+             including the head of the culinary staff, now either still own a good chunk of shares 
+             or have cashed in and enjoy a life of extreme wealth and prosperity because of Google’s explosive growth.
+
+        </p>
+   
+    </div>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function(){
+            if(window.pageYOffset >=menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
