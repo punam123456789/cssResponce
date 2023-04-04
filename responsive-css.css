@@ -1,0 +1,109 @@
+@media screen and (max-width: 1080px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+
+    }
+
+
+    .right-first {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .right-first>div>input {
+        width: 90%;
+        margin-top: 10px;
+
+    }
+
+    .right-first>div>select {
+        width: 90%;
+        margin-top: 10px;
+
+    }
+
+    .right-first>div>button {
+        width: 90%;
+        margin-top: 10px;
+
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+    .right-content {
+        width: 94%;
+        margin: auto;
+        margin-top: 60px;
+    }
+   
+    .footer-policies{
+        width: 100%;
+        margin: 0px;
+    }
+    .copyright{
+        width: 100%;
+        margin: 0px;
+    }
+    .navbar{
+        width: 100%;
+        margin: 0px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    .navbar>ul{
+        justify-content: center;
+    }
+    .footer{
+        width: 100%;
+        margin: 0px;
+    }
+    .navbar>ul>li:nth-child(2){
+        display: none;
+    }
+    .right-fields{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-fields .fields:nth-child(1){
+        width: 100%;
+    }
+    .right-fields .fields:nth-child(2){
+        width: 100%;
+    }
+    .right-fields .fields:nth-child(3){
+        width: 100%;
+    }
+    .right-fields .fields:nth-child(4){
+        width: 100%;
+    }
+    .right-fields .fields:nth-child(5){
+        width: 100%;
+    }
+    .right-fields .fields>label{
+        margin-top: 10px;
+    }
+   .service{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   }
+   .service-info{
+    margin-left: 12px;
+    /* border: 1px solid red; */
+    
+   }
+}
